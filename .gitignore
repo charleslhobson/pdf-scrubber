@@ -1,0 +1,18 @@
+# Private files this tool can create. They contain personal details - never commit them.
+pii_terms.txt
+scrub_last_run.log
+*.redacted.pdf
+*.redacted.txt
+scrub_report.json
+
+# Tax documents should never be in the repository. The only PDFs allowed are the blank
+# public-domain IRS forms the tests fill with made-up data.
+*.pdf
+!tests/forms/*.pdf
+
+# Build output
+build/
+dist/
+__pycache__/
+*.pyc
+.pytest_cache/

@@ -1,0 +1,25 @@
+# Copy to pii_terms.txt and fill in. One entry per line. Matching ignores
+# case and punctuation, and only matches whole words.
+#
+#   name: First M. Last   -> redacts the full name AND each name word on its
+#                            own ("First", "Last"), wherever they appear
+#   anything else         -> redacted as a whole phrase only
+#
+# An optional "label:" prefix sets the placeholder, e.g. "employer: Acme Inc"
+# becomes [EMPLOYER-1]. Entries on the same line share one placeholder.
+#
+# Worth listing: you, spouse, dependants, former names, trusts, your LLCs,
+# employers, partnerships/funds, your CPA and their firm, street names, towns,
+# brokerage or loan account nicknames.
+
+name: Jane Q. Sample
+name: John R. Sample
+name: Junior Sample
+
+trust: Sample Family Revocable Trust
+entity: Example Capital Partners Fund II
+employer: Example Widgets Inc
+preparer: Smith & Jones CPAs
+
+Maple Hollow
+Springfield

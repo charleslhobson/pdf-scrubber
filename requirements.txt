@@ -1,0 +1,6 @@
+pymupdf>=1.24
+PySide6-Essentials>=6.6
+# Scanned PDFs also need the Tesseract OCR program (found automatically once installed):
+#   Windows: https://github.com/UB-Mannheim/tesseract/wiki
+#   macOS:   brew install tesseract
+#   Linux:   sudo apt install tesseract-ocr
